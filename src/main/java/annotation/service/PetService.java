@@ -6,7 +6,7 @@
  * 修改时间：2017年11月8日
  */
 
-package anntation.service;
+package annotation.service;
 
 public interface PetService
 {

@@ -6,7 +6,7 @@
  * 修改时间：2017年11月8日
  */
 
-package anntation.dao;
+package annotation.dao;
 
 public interface PetDao
 {

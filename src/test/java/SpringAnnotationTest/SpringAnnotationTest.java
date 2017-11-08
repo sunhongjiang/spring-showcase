@@ -12,11 +12,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import anntation.service.PetService;
+import annotation.service.PetService;
 
 
 @RunWith(SpringRunner.class)
-@ContextConfiguration(locations = "classpath*:spring/spring.beans.annotation.xml")
+@ContextConfiguration(locations = "classpath*:spring-showcase/spring.beans.annotation.xml")
 public class SpringAnnotationTest
 {
     @Autowired

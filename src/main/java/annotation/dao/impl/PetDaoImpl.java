@@ -2,12 +2,12 @@
  * 文件名：PetDaoImpl.java 版权：Copyright by www.cheer.com 描述： 修改人：Cheer 修改时间：2017年11月8日
  */
 
-package anntation.dao.impl;
+package annotation.dao.impl;
 
 
 import org.springframework.stereotype.Repository;
 
-import anntation.dao.PetDao;
+import annotation.dao.PetDao;
 
 
 @Repository

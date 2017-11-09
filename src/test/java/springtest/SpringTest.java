@@ -45,7 +45,7 @@ public class SpringTest
     {
         // ------------Spring特性 IOC DI(Dependency Injection) 依赖注入
         // ------------Spring的beans工厂帮助我们创建对象（通过反射的方式Class.forName("")）
-        ApplicationContext context = new ClassPathXmlApplicationContext("spring.beans.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring/spring.beans.xml");
         MessagePrinter msgPrinter = context.getBean(MessagePrinter.class);
         msgPrinter.printMessage();
     }

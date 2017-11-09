@@ -2,12 +2,12 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans.xsd ">
-	
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd ">
+		
 	<!-- 指定外部properties文件 -->
 	<context:property-placeholder location="classpath:spring/db.properties"/>
 	
-	<bean id="msgService" class="spring-showcase.spring.MessageService" scope="singleton">
+	<bean id="msgService" class="spring.MessageService" scope="singleton">
 		<!-- 为message初始化 -->
 		<property name="message" value="helloworld...."></property>
 		<property name="msgs">

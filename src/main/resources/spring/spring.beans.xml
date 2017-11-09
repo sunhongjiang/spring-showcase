@@ -5,7 +5,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans.xsd ">
 	
 	<!-- 指定外部properties文件 -->
-	<context:property-placeholder location="classpath:spring-showcase/db.properties"/>
+	<context:property-placeholder location="classpath:spring/db.properties"/>
 	
 	<bean id="msgService" class="spring-showcase.spring.MessageService" scope="singleton">
 		<!-- 为message初始化 -->

@@ -16,7 +16,7 @@ import annotation.service.PetService;
 
 
 @RunWith(SpringRunner.class)
-@ContextConfiguration(locations = "classpath*:spring-showcase/spring.beans.annotation.xml")
+@ContextConfiguration(locations = "classpath*:spring/spring.beans.annotation.xml")
 public class SpringAnnotationTest
 {
     @Autowired

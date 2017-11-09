@@ -31,7 +31,7 @@ public class Container
         
         try
         {
-            for (Entry entry : loadFile("beans.config.properties").entrySet())
+            for (Entry entry : loadFile("config/beans.config.properties").entrySet())
             {
                 // 获取Class对象
                 Class clazz = Class.forName(entry.getValue().toString());
@@ -43,7 +43,7 @@ public class Container
                 objs.put(entry.getKey().toString(), obj);
             }
             
-            for (Entry entry : loadFile("dependency.config.properties").entrySet())
+            for (Entry entry : loadFile("config/dependency.config.properties").entrySet())
             {
                 if (objs.containsKey(entry.getKey()))
                 {

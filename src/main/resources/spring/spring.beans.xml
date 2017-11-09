@@ -7,7 +7,7 @@
 	<!-- 指定外部properties文件 -->
 	<context:property-placeholder location="classpath:spring-showcase/db.properties"/>
 	
-	<bean id="msgService" class="spring-showcase/spring.MessageService" scope="singleton">
+	<bean id="msgService" class="spring-showcase.spring.MessageService" scope="singleton">
 		<!-- 为message初始化 -->
 		<property name="message" value="helloworld...."></property>
 		<property name="msgs">

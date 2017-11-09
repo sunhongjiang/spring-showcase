@@ -5,6 +5,8 @@
 package SpringAnnotationTest;
 
 
+import javax.annotation.Resource;
+
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import annotation.service.MasterService;
 import annotation.service.PetService;
 
 
@@ -22,9 +25,20 @@ public class SpringAnnotationTest
     @Autowired
     private PetService petService;
     
+    @Resource
+    private MasterService masterService;
+    
     @Test
     public void test()
     {
         Assert.assertEquals(1, petService.find("scott", "tiger"));
+    }
+    
+
+    
+    @Test
+    public void test1()
+    {
+        Assert.assertEquals(1, masterService.login("scott", "tiger"));
     }
 }

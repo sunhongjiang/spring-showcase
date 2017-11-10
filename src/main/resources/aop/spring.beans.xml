@@ -8,7 +8,7 @@
 	<context:annotation-config></context:annotation-config>
 	
 	<!-- 扫描com.cheer.spring包（包含其子包）下所有带有注解的类（@Repository @Service @Component @Controller） -->
-	<context:component-scan base-package="annotation"></context:component-scan>
+	<context:component-scan base-package="ex02"></context:component-scan>
 
 	
 </beans>

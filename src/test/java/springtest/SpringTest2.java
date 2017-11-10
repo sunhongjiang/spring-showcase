@@ -8,25 +8,30 @@
 
 package springtest;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import ex02.ArithmeticCalculatorImpl;
+import ex02.ArithmeticCalculator;
 
 @RunWith(SpringRunner.class)
 @ContextConfiguration(locations = "classpath*:aop/spring.*.xml")
 
 public class SpringTest2
 {
+    private static final Logger LOGGER = LogManager.getLogger(SpringTest2.class);
+    
     @Autowired
-    private ArithmeticCalculatorImpl aci;
+    private ArithmeticCalculator aci;
     
     @Test
     public void test()
     {
+        LOGGER.info("================================================");
         aci.add(1, 1);
     }
 }

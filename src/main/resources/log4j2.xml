@@ -24,16 +24,17 @@
 
 	<Loggers>
 		<!-- Root Logger -->
-		<Root level="error">
+		<Root level="info">
 			<AppenderRef ref="console" />
 			<AppenderRef ref="file" />
 		</Root>
 
-		<Logger name="org.springframework" level="debug" additivity="false">
+<!-- 		<Logger name="org.springframework" level="debug" additivity="false">
 			<AppenderRef ref="console"></AppenderRef>
 			<AppenderRef ref="file"></AppenderRef>
-		</Logger>
-		
+		</Logger> -->
+
+
 	</Loggers>
 
 

@@ -24,7 +24,7 @@ public class CalcLoggingAspect
     // 注解里配置的内容是切点表达式 
     // 第一个*表示任意的修饰符或者方法返回值类型
     // .. 表示匹配方法任意数量的参数
-    @Before("execution(*Calc.add(...))")
+    @Before("execution(* ex02.ArithmeticCalculator.add(...))")
     public void logBefore()
     {
         LOGGER.info("The method add() begins");

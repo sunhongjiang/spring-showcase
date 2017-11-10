@@ -6,7 +6,7 @@
  * 修改时间：2017年11月7日
  */
 
-package spring;
+package spring.ioc;
 
 import java.util.ArrayList;
 import java.util.HashMap;

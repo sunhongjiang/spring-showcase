@@ -22,7 +22,7 @@ import annotation.service.PetService;
 @ContextConfiguration(locations = "classpath*:spring/spring.beans.annotation.xml")
 public class SpringAnnotationTest
 {
-    @Autowired
+    @Resource
     private PetService petService;
     
     @Resource
@@ -33,8 +33,6 @@ public class SpringAnnotationTest
     {
         Assert.assertEquals(1, petService.find("scott", "tiger"));
     }
-    
-
     
     @Test
     public void test1()

@@ -8,8 +8,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import ex01.Container;
 import ex01.ReportService;
-import spring.MessagePrinter;
-import spring.MessageService;
+import spring.ioc.MessagePrinter;
+import spring.ioc.MessageService;
 
 
 /*
